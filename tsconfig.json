@@ -1,6 +1,16 @@
 {
     "compilerOptions": {
-        "target": "ESNext",
-        "moduleResolution": "Node"
-    }
+        "target": "ES2015",
+        "moduleResolution": "Node",
+        "module": "CommonJS",
+        "lib": ["ES2015", "DOM"],
+        "outDir": "./dist",
+        "rootDir": "./",
+        "strict": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true
+    },
+    "include": ["./server/**/*.ts", "./db/**/*.ts"],
+    "exclude": ["node_modules", "dist"]
 }
