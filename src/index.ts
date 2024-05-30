@@ -1,4 +1,5 @@
-import express from 'express';
+import 'dotenv/config';
+import * as express from 'express';
 import { fireStore } from './db';
 
 const app = express();
