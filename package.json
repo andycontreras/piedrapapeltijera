@@ -4,7 +4,7 @@
   "scripts": {
     "dev:front": "parcel serve ./public/index.html",
     "dev:back": "nodemon -r dotenv/config --legacy-watch ./server --exec ts-node ./dev.ts",
-    "build:front": "parcel build ./client/index.html",
+    "build:front": "parcel build ./public/index.html",
     "build:back": "tsc ./server/index.ts",
     "build": "npm run build:front && npm run build:back",
     "start": "node ./server/index.js"
