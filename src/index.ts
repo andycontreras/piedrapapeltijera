@@ -7,7 +7,7 @@ const port = process.env.PORT || 3005;
 const userColl = fireStore.collection('users');
 const roomColl = fireStore.collection('rooms');
 
-app.get('/API-review', async (req, res) => {
+app.get('/api-review', async (req, res) => {
 	res.json({
 		message: 'Está funcionando',
 	});
@@ -27,5 +27,5 @@ app.get('/room/:id', async (req, res) => {
 });
 
 app.listen(port, () => {
-	console.log(`Listening on http://localhost:${port}`);
+	console.log(`Listening on ${port}`);
 });
