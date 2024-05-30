@@ -2,7 +2,7 @@
   "name": "pptv2",
   "version": "1.0.0",
   "main": "./dist/index.js",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "dev": "nodemon -r dotenv/config --legacy-watch ./server --exec ts-node ./dev.ts",
     "build": "tsc -p .",
