@@ -3,10 +3,12 @@
         "target": "ESNext",
         "module": "ESNext",
         "moduleResolution": "Node",
+        "allowSyntheticDefaultImports": true,
         "resolveJsonModule": true,
-        "outDir": "/dist",
+        "outDir": "./dist",
+        "rootDir": "./src",
         "strict": true,
         "esModuleInterop": true
     },
-    "include": ["src/**/*", "dist/**/*"]
+    "include": ["src/**/*.ts"]
 }
