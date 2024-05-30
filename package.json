@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "nodemon -r dotenv/config --legacy-watch ./server --exec ts-node ./dev.ts",
-    "build": "tsc -t es2017 ./server/index.ts",
+    "build": "tsc ./src/index.ts",
     "start": "node ./server/index.js"
   },
   "keywords": [],
