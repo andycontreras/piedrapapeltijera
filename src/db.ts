@@ -1,3 +1,4 @@
+import 'dotenv/config';
 import * as admin from 'firebase-admin';
 
 const serviceAccount = JSON.parse(process.env.DB_CREDENTIAL as string);
