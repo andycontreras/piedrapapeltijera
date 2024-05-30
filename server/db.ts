@@ -1,6 +1,6 @@
 import * as admin from 'firebase-admin';
 
-const serviceAccount = JSON.parse(process.env.DB_CREDENTIAL as any);
+const serviceAccount = JSON.parse(process.env.DB_CREDENTIAL as string);
 admin.initializeApp({
 	credential: admin.credential.cert(serviceAccount),
 	databaseURL: 'https://pipati-65aee-default-rtdb.firebaseio.com/',
