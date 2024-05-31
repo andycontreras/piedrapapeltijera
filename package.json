@@ -4,8 +4,8 @@
   "main": "./dist/index.js",
   "scripts": {
     "dev": "nodemon -r dotenv/config --legacy-watch ./server --exec ts-node ./dev.ts",
-    "build": "tsc -t esnext",
-    "start": "node ./src/index.js"
+    "build": "tsc",
+    "start": "node ./dist/index.js"
   },
   "keywords": [],
   "license": "ISC",
